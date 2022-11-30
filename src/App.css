@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+.blink {
+  animation: blinker 0.2s linear infinite;
+  color: white;
+  font-family: sans-serif;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0.8;
+  }
+}
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+  
+}
+.col-sm{
+   width: 33.3%;
+   padding: 0 15px;        
+}
+.col-sm h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.col-sm h4::before{
+  content: '';
+  position: absolute;
+  left: 50px;;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 350px;
+}
+.col-sm ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.col-sm ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.col-sm ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.fa-facebook {
+  background:#e91e63;
+  color: white;
+}
+/* .col-sm .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+} */
+/* .col-sm .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+} */
+
+.col-sm .social-links a{
+  margin-right: 10px;
+}
+.phimphimvn{
+  color: #BBBBBB;
+  text-align: left;
+  padding-left:20px;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .col-sm{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .col-sm{
+    width: 100%;
+}
+}

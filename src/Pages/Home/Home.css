@@ -1,0 +1,9 @@
+.Home_container{
+    overflow:hidden
+}
+h3{
+    color: white;
+    font-size:30px;
+    text-align: left;
+    padding-left: 50px;
+}
