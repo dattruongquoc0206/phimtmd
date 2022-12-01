@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Navbar from '../../Components/Navbar/Navbar';
 import './SearchMoviesPage.css'
-
+import {Link} from 'react-router-dom';
 const SearchMovies= () => {
     const [search, setSearch] = useState('');
     const [movies, setMovies] = useState([]);
@@ -30,6 +30,7 @@ const SearchMovies= () => {
         <div className='Movie_list'>
             
             {movies.filter(movie => movie?.poster_path).map(movie => (
+                 <Link to={`/movie/${movie?.id}`} style={{ textDecoration: 'none' }}>
                <div className="Movie_cards" key={movie.id} >
                     <img className="Movie_image"
                     src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
@@ -39,6 +40,7 @@ const SearchMovies= () => {
                         {movie.title}
                     </div>
                 </div>
+                </Link>
             ))}
 
         </div>

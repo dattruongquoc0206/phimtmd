@@ -30,7 +30,8 @@ html{
     width:270px;
 }
 .button_sm{
-    background-color: orange;
+    background-color: red;
+    color:black;
 }
 form i{
     position:absolute;

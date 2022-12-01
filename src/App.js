@@ -3,7 +3,6 @@ import {Route,Routes} from 'react-router-dom'
 import Home from './Pages/Home/Home';
 import MovieDetailPage from './Pages/MovieDetailPage/MovieDetailPage';
 import SignIn from './Components/SignIn/SignIn';
-import SignUp from './Pages/SignUp/SignUp';
 import HorrorPage from './Pages/HorrorPage/HorrorPage';
 import ActionPage from './Pages/ActionPage/ActionPage';
 import SearchMovies from './Pages/SearchMoviesPage/SearchMoviesPage';

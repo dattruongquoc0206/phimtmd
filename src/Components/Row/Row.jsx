@@ -26,7 +26,7 @@ const Row = ({title,fetchURL}) => {
                 </div>
                 </Link>
             ))}
-            </ScrollMenu>
+        </ScrollMenu>  
         </div>
          
     </div>

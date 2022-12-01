@@ -3,17 +3,15 @@
     font-family: bold;
     padding-top:20px;
     display: flex;
-    /* overflow-x: scroll; */
 }
 .Row_Container{
     position:relative;
     display: flex;
     align-items: center;
-    /* overflow-x:visible;
-    overflow-y: hidden; */
+    overflow-x:visible;
+    overflow-y: hidden;
 }
 .Image_Rows {
-    /* object-fit: contain; */
     width:200px;
     height:190px;
     margin-right:50px;
